@@ -35,7 +35,7 @@ def solution1(dataLines):
             ansSiteId = key
             ansValue = value            
 
-    print siteId, ansValue
+    print ', '.join([siteId, str(ansValue)])
             
         
 def solution2(dataLines, startTime = '2019-02-03 00:00:00', stopTime = '2019-02-04 23:59:59'):
@@ -68,7 +68,7 @@ def solution2(dataLines, startTime = '2019-02-03 00:00:00', stopTime = '2019-02-
             solution[userId] = [siteId, userDict[userId][siteId]]
 
     for key, value in solution.items():
-        print key, value[0], value[1]
+        print ', '.join([key, value[0], str(value[1])])
 
 def solution3(dataLines):
     lastVisit = {}
@@ -90,7 +90,7 @@ def solution3(dataLines):
     for element in solutionList:
         if cnt > 2:
            return 
-        print element[0], element[1]
+        print ', '.join([element[0], str(element[1])])
         cnt += 1
     
 def solution4(dataLines):
