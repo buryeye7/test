@@ -114,6 +114,7 @@ def solution4(dataLines):
     print ansCount
 
 if __name__ == "__main__":
+    #input file must be csv format
     file_name = sys.argv[1]
     fd = open(file_name,'r')
     dataLines = fd.readlines()
