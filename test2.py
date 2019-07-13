@@ -1,8 +1,8 @@
-def solve(fine_name):
+def solve(file_name):
     fd = open(file_name,'r')
     productDict = {}
     for line in fd.readlines():
-        lineList = line.strip().replace('\"',"").replace('{','').replace('}','').split(',')
+        lineList = line.strip().replace('\"','').replace('\n','').replace('{','').replace('}','').split(',')
         user = lineList[0].split(':')[1].strip()
         productId = lineList[1].split(':')[1].strip()
         quantity = lineList[2].split(':')[1].strip()
