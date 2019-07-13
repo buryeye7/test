@@ -12,7 +12,7 @@ def equalsWhenOneCharRemoved(x, y):
 
     i = j = 0
     valid = 0
-    while (j < length - 1):
+    while j < length - 1:
         if target[i] != source[j]:
             valid += 1
             if valid > 1:
