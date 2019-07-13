@@ -1,5 +1,3 @@
-import sys
-
 def solve(fine_name):
     fd = open(file_name,'r')
     productDict = {}
@@ -47,7 +45,3 @@ def solve(fine_name):
     for productId in maxSoldQuantityIdList:
         SoldQuantityContent.append('\"' + productId + '\"')
     print SoldQuantityPrefix + ','.join(SoldQuantityContent) + ' ]'
-
-if __name__ == '__main__':
-    file_name = sys.argv[1]
-    solve(file_name)
