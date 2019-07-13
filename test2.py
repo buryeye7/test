@@ -34,8 +34,6 @@ if __name__ == '__main__':
     
     PurcharsedPrefix = 'Most popular product(s) based on the number of purchasers: [ '
     PurcharsedContent = []
-    maxPurchasedIdList.append("aaa")
-    maxPurchasedIdList.append("bbb")
     for id in maxPurchasedIdList:
         PurcharsedContent.append('\"' + id + '\"')
     print PurcharsedPrefix + ','.join(PurcharsedContent) + ' ]'
