@@ -37,7 +37,7 @@ def solution1(dataLines):
             ansSiteId = key
             ansValue = value            
 
-    print ', '.join([siteId, str(ansValue)])
+    print ', '.join([ansSiteId, str(ansValue)])
             
         
 def solution2(dataLines, startTime = '2019-02-03 00:00:00', stopTime = '2019-02-04 23:59:59'):
