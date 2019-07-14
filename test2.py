@@ -13,7 +13,7 @@ def solve(file_name):
             if not user in productDict[productId][2]:
                 productDict[productId][0] += 1
                 productDict[productId][2].append(user)
-        
+    fd.close()    
     maxPurchaserIdList = []
     maxPurchaserValue = 0 
     maxSoldQuantityIdList = []
