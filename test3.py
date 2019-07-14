@@ -119,6 +119,7 @@ if __name__ == "__main__":
     fd = open(file_name,'r')
     dataLines = fd.readlines()
     dataLines = dataLines[1:]
+    fd.close()
 
     print 'solution1'
     solution1(dataLines)
