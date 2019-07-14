@@ -12,19 +12,21 @@ def solution1(dataLines):
         userId = words[1]
         countryId = words[2]
         siteId = words[3].strip().replace('\n','')
+        user_site = '_'.join([userId,siteId])
         if countryId == 'BDV':
-            if not countryDict.has_key(userId):
-                countryDict[userId] = [True, siteId]
+            if not countryDict.has_key(user_site):
+                countryDict[user_site] = True
             else:
-                countryDict[userId][0] = False
+                countryDict[user_site] = False 
     
     siteDict = {}
-    for _, value in countryDict.items():
-        if value[0] == True:
-            if not siteDict.has_key(value[1]):
-                siteDict[value[1]] = 1
+    for key, value in countryDict.items():
+        site = key.split('_')[1]
+        if value == True:
+            if not siteDict.has_key(site):
+                siteDict[site] = 1
             else:
-                siteDict[value[1]] += 1
+                siteDict[site] += 1
     
     ansSiteId = ""
     ansValue = 0
